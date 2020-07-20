@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>NBBO</title>
+    <link href="nbbo.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>NBBO</h1>
+
+    <div id="nbboTable">
+        <table border="1">
+            <thead>
+                <tr><th>Symbol</th><th>Bid</th><th>BidSize</th><th>Ask</th><th>AskSize</th></tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <h1>Depth</h1>
+    Enter ticker to show depth(case insensitive):
+    <input type="text" name="Symbol" value="" onchange="SubscribeToDepth(this.value)">
+
+    <div id="depthTable">
+        <table border="1">
+            <thead>
+                <tr><th>Symbol</th><th>Exchange</th><th>Bid</th><th>BidSize</th><th>Ask</th><th>AskSize</th><th>Last</th></tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    
+
+    <script src="lib/signalr.min.js"></script>
+    <script src="lib/nbbo.js"></script>
+</body>
+</html>
